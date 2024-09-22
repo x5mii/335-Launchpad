@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_335LB_App.MainPage">
+
+    <Grid BackgroundColor="LightGray">
+        <!-- Hintergrund des Grids gesetzt -->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Erste Reihe -->
+        <Button Text="1"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad1"
+                BackgroundColor="#0086f3"
+                Grid.Row="0" Grid.Column="0"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <Button Text="2"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad2"
+                BackgroundColor="#1ecbe1"
+                Grid.Row="0" Grid.Column="1"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <Button Text="3"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad3"
+                Grid.Row="0" Grid.Column="2"
+                BackgroundColor="#17e8a4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <!-- Zweite Reihe -->
+        <Button Text="4"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad4"
+                Grid.Row="1" Grid.Column="0"
+                BackgroundColor="#9005fa"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <Button Text="5"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad5"
+                Grid.Row="1" Grid.Column="1"
+                BackgroundColor="#e969d6"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <Button Text="6"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad6"
+                Grid.Row="1" Grid.Column="2"
+                BackgroundColor="#ea4188"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <!-- Dritte Reihe -->
+        <Button Text="7"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad7"
+                Grid.Row="2" Grid.Column="0"
+                BackgroundColor="#ef8210"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <Button Text="8"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad8"
+                Grid.Row="2" Grid.Column="1"
+                BackgroundColor="#f4ce2c"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <Button Text="9"
+                Command="{Binding ButtonCommand}"
+                CommandParameter="Launchpad9"
+                Grid.Row="2" Grid.Column="2"
+                BackgroundColor="#80e916"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Margin="5" />
+
+        <!-- Import Sound Button -->
+        <Button Text="Import Sound"
+                Grid.Row="3" Grid.ColumnSpan="3"
+                Command="{Binding ImportSoundCommand}"
+                HorizontalOptions="Fill"
+                VerticalOptions="End"
+                BackgroundColor="WhiteSmoke"
+                TextColor="Black"/>
+    </Grid>
+</ContentPage>
